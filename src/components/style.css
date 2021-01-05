@@ -15,11 +15,11 @@
   background-color: #efefef !important;
 }
 
-.card-align{
-  max-width: 250px;
-  width:15rem !important;
-}
 
+.card-w{
+  max-width:15rem !important;
+
+}
   .card-font{
   color:#8a0fa9;
   font-size: 25px;
