@@ -1,0 +1,128 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.bg-white{
+  background-color: white !important;
+}
+.nav .navbar .navbar-collapse {
+    color: rgb(0, 0, 0);   
+    background-color: white;
+  }
+.navbar{
+  height: 100px;
+  padding: 1rem 0;
+}  
+  /* .user_icon{
+    margin: 10px 0 0;
+    position: absolute;
+    bottom: 13px;
+    left: 5px;
+    display: block;
+  } */
+  
+  .NavLink{
+    padding: 20px;
+    font-size: 16.5px;
+    bottom: 10px;
+    text-decoration: none !important;
+    margin: 15px;
+    color: #655959 !important;
+    letter-spacing: 0.1px;
+    font-weight: 600;
+  }
+  
+  .NavLink:hover{
+    color: rgb(0, 0, 0) !important;
+    transition: .3s ease-in;
+  }
+  .nav-item{
+    padding: 8px;
+    display: block;
+  }
+  .sidebar_icon{
+    margin: 10px;
+    font-size: 25px;
+    color:#922c88;
+  }
+  /* @media (max-width: 1199px)
+    .sidebar .main-menu {
+    width: 100px;
+    height: calc(100% - 80px);
+} */
+/* @media (max-width: 1199px)
+.sidebar {
+    padding-top: 80px;
+    height: calc(100% - 80px);
+} */
+  .nav-title{
+    font-weight: 700;
+  }
+  /* Sidebar */
+  .side{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 100; 
+    padding: 80px 0 0; 
+    box-shadow: inset -1px 0 0 rgba(155, 147, 147, 0.1);
+  }
+  
+  @media (max-width: 767.98px) {
+    .sidebar {
+      top: 5rem;
+    }
+  }
+/*   
+.sidebar li:hover{
+  background: #922c88 !important;
+  border-radius: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+} */
+
+.sidebar li:hover:before,
+.sidebar li.open:hover:before {
+    width: 100%;
+    -webkit-transition: width .2s ease-in;
+      -moz-transition:  width .2s ease-in;
+       -ms-transition:  width .2s ease-in;
+            transition: width .2s ease-in;
+
+}
+
+  .sidebar-sticky {
+    position: relative;
+    top: 0;
+    height: calc(100vh - 48px);
+    padding-top: .5rem;
+    padding-bottom: 40px;
+    overflow-x: hidden;
+    overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+  }
+  
+  @supports ((position: -webkit-sticky) or (position: sticky)) {
+    .sidebar-sticky {
+      position: -webkit-sticky;
+      position: sticky;
+    }
+  }
+  
+  .sidebar {
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+    margin-right: 4px;
+  }
+  
+  /* .sidebar .nav-link:hover .feather,
+  .sidebar .nav-link.active .feather {
+    color: inherit;
+  } */
+  
+  .sidebar-heading {
+    font-size: .75rem;
+    text-transform: uppercase;
+  }
+  

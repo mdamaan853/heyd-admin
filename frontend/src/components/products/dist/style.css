@@ -1,0 +1,203 @@
+body, p, input, select, textarea, button {
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: -0.2px;
+  font-size: 16px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+tr, td {
+  text-align: left;
+  padding: 1rem;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+  padding-top: 20px;
+  font-weight: 600;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.cat-input {
+  width: 60%;
+  margin: 15px;
+  border-radius: 16px;
+  padding: 16px;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+  transition: all 0.2s ease-in-out;
+  appearance: none;
+  -webkit-appearance: none;
+}
+.cat-input:focus {
+  box-shadow: inset 1px 1px 2px white, inset -1px -1px 2px #FFF;
+}
+
+.new-button {
+  display: inline-block;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 4px;
+  background-color: #9c27b0;
+  width: 100%;
+  height: 40px;
+  text-align: center;
+  font-size: 16px;
+  color: #fff;
+}
+
+input[type=file] {
+  position: absolute;
+  z-index: -1;
+  top: 6px;
+  left: 0;
+  font-size: 15px;
+  color: #999999;
+}
+
+textarea {
+  height: 100px;
+  overflow: auto;
+  resize: vertical;
+  width: 100%;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+}
+
+label {
+  display: block;
+  margin-bottom: 19.5px;
+  font-size: 16px;
+  font-weight: 600;
+  width: 100%;
+}
+
+li {
+  list-style: none;
+}
+
+.accord-header {
+  font-size: 20px;
+  color: #9c27b0;
+  text-decoration: none;
+  outline: none;
+  font-weight: 400;
+  border: none;
+}
+
+.image-upload {
+  border: none;
+  outline: none;
+}
+
+.input {
+  margin-right: 16px/2;
+  width: 50%;
+  box-sizing: border-box;
+  transition: all 0.2s ease-in-out;
+  appearance: none;
+  -webkit-appearance: none;
+}
+.input:focus {
+  box-shadow: inset 1px 1px 2px white, inset -1px -1px 2px #FFF;
+}
+
+.input {
+  border: 0;
+  outline: 0;
+  width: 450px;
+  font-size: 16px;
+  border-radius: 16px;
+  padding: 16px;
+  margin: 12px;
+}
+
+.fileupload-buttonbar {
+  background: #ffffff;
+  padding: 1rem;
+  border: 1px solid #e0e0e0;
+  color: rgba(0, 0, 0, 0.87);
+  border-bottom: 0 none;
+  border-top-right-radius: 4px;
+  border-top-left-radius: 4px;
+}
+
+.file-upload-content {
+  background: #ffffff;
+  padding: 2rem 1rem;
+  margin: 11px 45px;
+  height: 60px;
+  border: 1px solid #e0e0e0;
+  color: rgba(0, 0, 0, 0.87);
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+.jumbotron {
+  background-color: white !important;
+}
+
+.button {
+  background-color: #922c88;
+  color: white;
+  font-weight: bold;
+  margin: 5px;
+  width: 140px;
+  height: 50px;
+  outline: none;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  padding: 10px;
+  font-weight: 600;
+}
+
+table {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.button:hover {
+  color: black;
+  background-color: transparent;
+  outline: black;
+  border: 1px solid black;
+}
+
+.card {
+  border-radius: 7px;
+  background-color: #ece8e8;
+}
+
+.button1 {
+  background-color: #922c88;
+  color: white;
+  font-weight: bold;
+  margin: 15px;
+  width: 140px;
+  height: 50px;
+  outline: none;
+  border: none;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  padding: 10px;
+  font-weight: 600;
+}
+
+.button1:hover {
+  color: #922c88;
+  background-color: #fdfdfd;
+  border: 1px solid black;
+}
+.button1:hover label {
+  margin: 0;
+  flex: 1;
+  color: black;
+}

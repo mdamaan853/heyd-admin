@@ -1,0 +1,16 @@
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+tr,th{
+    text-align:center ;
+    
+}
+th{
+    vertical-align: middle;
+    background: #ffffff;
+    color: rgba(0, 0, 0, 0.87);
+    width: 100%;
+    font-weight: 800;
+}
