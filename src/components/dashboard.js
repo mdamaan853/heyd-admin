@@ -17,7 +17,7 @@ export class Dashboard extends Component {
                 <div className="col-10" >
                 <h1 className="my-4">Dashboard</h1>
                 <div className="row mt-5">
-                    <div className="col-3 cen-card" >
+                    <div className="col-3 cen-card card-align" >
                       <Card className="card-dash">
                         <Card.Img variant="top" />
                         <h1 className="mb-0 card-font">Total Users</h1>

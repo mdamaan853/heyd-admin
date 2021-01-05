@@ -14,6 +14,11 @@
   width: 18rem;
   background-color: #efefef !important;
 }
+
+.card-align{
+  max-width: 250px;
+}
+
   .card-font{
   color:#8a0fa9;
   font-size: 30px;

@@ -10,7 +10,9 @@
     border-radius: 30px;
     width: 40%;
   }
-
+  .navbar{
+    height:60px
+  }
   /* .user_icon{
     margin: 10px 0 0;
     position: absolute;
