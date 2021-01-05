@@ -11,8 +11,8 @@
     background-color: white;
   }
 .navbar{
-  height: 100px;
-  padding: 1rem 0;
+  height: 60px;
+  /* padding: 1rem 0; */
 }  
   /* .user_icon{
     margin: 10px 0 0;
@@ -23,11 +23,11 @@
   } */
   
   .NavLink{
-    padding: 20px;
+    /* padding: 20px; */
     font-size: 16.5px;
     bottom: 10px;
     text-decoration: none !important;
-    margin: 20px 15px;
+    margin: 20px 10px;
     color: #837979 !important;
     letter-spacing: 0.1px;
     font-weight: 600;
@@ -66,7 +66,7 @@
     bottom: 0;
     left: 0;
     z-index: 100; 
-    padding: 40px 0 0; 
+    padding: 40px 0px 0px; 
     box-shadow: inset -1px 0 0 rgba(155, 147, 147, 0.1);
   }
   

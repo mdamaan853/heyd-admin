@@ -63,6 +63,7 @@ class Expenseslist extends React.Component {
       <div class="col-2">
      <Sidebar/>  
      </div>  
+          <div class="col-10">
           <Container>
             <Row>
               <Col>
@@ -86,6 +87,7 @@ class Expenseslist extends React.Component {
               </Col>
             </Row>
           </Container>
+            </div>
         </div>
         </div>
         </div>
@@ -93,5 +95,4 @@ class Expenseslist extends React.Component {
     }
   }
 }
-
 export default Expenseslist;
