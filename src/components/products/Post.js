@@ -18,7 +18,7 @@ export class Posts extends Component {
       product: [],
       catId:"",
       response: {},
-    };
+    };   
   }
   deleteProduct(id) {
     if(window.confirm('Are you sure you want to Delete')){
