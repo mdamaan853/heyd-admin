@@ -21,12 +21,14 @@ export class Posts extends Component {
     };
   }
   deleteProduct(id) {
+    if(window.confirm('Are you sure you want to Delete')){
     axios.delete(url+`product/${id}`)
     .then(res => window.location.reload(false))
     .catch(err => console.log(err))
     // alert("deleted")
     //window.location.reload(false)  }
     // );
+    }
   }
   render() {
     console.log(this.state.product)
