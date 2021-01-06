@@ -36,11 +36,10 @@ export class Posts extends Component {
     if (loading) {
       return <h2>Loading...</h2>;
     }
-
-    return (
-      <div>
+          return (  
+                  <div>
                   <div className="col-sm-12">
-                    <h1 className="my-4">Product List</h1>
+                  <h1 className="my-4">Product List</h1>
                   </div>
                   <table
                     align="center" background="black"
