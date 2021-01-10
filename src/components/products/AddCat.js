@@ -47,7 +47,6 @@ class AddCat extends Component {
     else{
       fd.append("parentCatId", this.state.selectedCat.value)
     }
-    
     fd.append("catName", this.state.catName);
     e.preventDefault();
     axios
