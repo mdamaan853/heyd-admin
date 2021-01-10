@@ -49,7 +49,7 @@ const GetFuncData = () => {
                             <Accordion.Toggle style={{display:'flex'}} as={Card.Header} eventKey={index + 1}>   
                             
                             <h4>{cat.catName}</h4>
-                            <div style={{position:'absolute',right:'0px                                                                                                                                                                                                                '}}>
+                            <div style={{position:'absolute',right:'0px'}}>
                             <button className="btn" type="button">
 
                             <Link to={"/updateCat/" + cat.id}>

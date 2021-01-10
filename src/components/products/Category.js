@@ -22,7 +22,7 @@ class GetData extends React.Component {
         this.setState({ categorys });
       },
       (error) => {
-        this.setState({ error });
+        this.setState({error});
       }
     );
   }

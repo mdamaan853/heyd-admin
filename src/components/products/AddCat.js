@@ -7,14 +7,14 @@ import Navbar from "../../Layout/Navbar";
 import Sidebar from "../../Layout/sidebar/Sidebar"
 
 import "./style.scss";
-import { url } from "../../url";
+import { url } from "../../url";  
 class AddCat extends Component {
   constructor(props) {
     super(props);
     this.state = {
       id: "",
       catName: "",
-      parentCatId: "",
+      parentCatId:"",
       category: [],
       selectedCat:"",
       pushCat:[]
@@ -27,7 +27,6 @@ class AddCat extends Component {
         console.log(res);
         this.setState({ category: res.data.result });
         this.setState({pushCat:this.state.category.map(cat => {
-          // console.log(cat.id)
           return ({value:cat.id,label:cat.catName})         
       })})
       })
@@ -38,22 +37,22 @@ class AddCat extends Component {
     this.setState({ [e.target.name]: e.target.value });
   };
   catHandler=(selectedCat)=>{
-    // console.log(selectedCat)
     this.setState({selectedCat});
   }
   submitHandler = (e) => {
-    // console.log(this.state);
     const fd = new FormData();
-    // console.log(this.state.selectedCat.value)
-    fd.append("parentCatId", this.state.selectedCat.value);
+    if(this.state.selectedCat.value == undefined){
+      fd.append("parentCatId",0)
+    }
+    else{
+      fd.append("parentCatId", this.state.selectedCat.value)
+    }
+    
     fd.append("catName", this.state.catName);
     e.preventDefault();
     axios
       .post(url+`category/`,fd)
-      .then((res) =>
-      //  toast.success("category added successfully!"),
-       this.props.history.push('/CategoryList'))
-      //  console.log(this.props))
+      .then((res) => this.props.history.push('/CategoryList') )
       .catch((err) => console.log(err));
   };
   render() {
@@ -81,26 +80,13 @@ class AddCat extends Component {
                   <form>
                     <center>
                       <div className="input-group-prepend ">
-                        {/* <select
-                          title="Only select this to insert sub-category"
-                          className="custom-select "
-                          id="inputGroupSelect01"
-                          onChange={this.changeHandler}
-                          name="parentCatId"
-                        >
-                          <option selected value="0">
-                            None
-                          </option>
-                          {category.map((cat) => (
-                            <option value={cat.id}>{cat.catName}</option>
-                          ))}
-                        </select> */}
                           <Select
                           title="Only select this to insert sub-category"
                     className="react-select cat-input"
                     classNamePrefix="react-select"
             name="parentCatId"
             placeholder="Select Category"
+            defaultValue="0"
             value={this.state.selectedCat}
             onChange={this.catHandler}
             options={this.state.pushCat}
