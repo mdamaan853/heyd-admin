@@ -57,8 +57,6 @@ regularPriceError: "",
 sellPriceError: "",
 quantityError:"",
 foodTypeError:"",
-
-
     };
   }
   // get category tax
@@ -232,10 +230,10 @@ FormProSubmit = (e) => {
   const isValid=this.validate();
   console.log(isValid)
   if(isValid){
-      console.log(this.state)
+    console.log(this.state)
     this.setState({select:''});
     this.state.select = this.state.selectedOptions.map(selected => {
-     return(selected.value)
+    return(selected.value)
    })
    this.state.foodType=this.state.foodType.value
    console.log(this.state.foodType)

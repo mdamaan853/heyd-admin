@@ -74,8 +74,7 @@ class AddCat extends Component {
                 <div
                   className="card-body align-self-center d-flex flex-column flex-lg-row
        justify-content-between align-items-lg-center */}
-         "
-                 >
+         " >
                   <form>
                     <center>
                       <div className="input-group-prepend ">
@@ -97,6 +96,7 @@ class AddCat extends Component {
                       placeholder="Sub Category / Category Name"
                       aria-label="menu"
                       type="text"
+                      
                       name="catName"
                       value={catName}
                       onChange={this.changeHandler}

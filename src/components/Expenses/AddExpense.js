@@ -64,7 +64,7 @@ class AddExpenses extends Component {
               className="card-body align-self-center d-flex flex-column flex-lg-row
               justify-content-between align-items-lg-center
               "
-            >
+            > 
               <form>
                 <input
                   className="input"
@@ -74,7 +74,6 @@ class AddExpenses extends Component {
                   onChange={this.changeHandler}
                   placeholder="Supplier Name"
                 />
-
                 <input
                   className="input"
                   type="text"
@@ -83,7 +82,6 @@ class AddExpenses extends Component {
                   onChange={this.changeHandler}
                   placeholder="Supplier Address"
                 />
-
                 <input
                   className="input"
                   type="text"
@@ -92,7 +90,6 @@ class AddExpenses extends Component {
                   onChange={this.changeHandler}
                   placeholder="Supplier GST"
                 />
-
                 <input
                   className="input"
                   type="text"
@@ -101,7 +98,6 @@ class AddExpenses extends Component {
                   onChange={this.changeHandler}
                   placeholder="Products"
                 />
-
                 <input
                   className="input"
                   type="date"
@@ -111,7 +107,6 @@ class AddExpenses extends Component {
                   onChange={this.changeHandler}
                   placeholder="Date"
                 />
-
                 <input
                   className="input"
                   type="number"
@@ -120,7 +115,6 @@ class AddExpenses extends Component {
                   onChange={this.changeHandler}
                   placeholder="Total "
                 />
-
                 <input
                   className="input"
                   type="number"
@@ -130,7 +124,6 @@ class AddExpenses extends Component {
                   placeholder="Tax"
                   required
                 />
-
                 <input
                   className="input"
                   type="number"
@@ -139,7 +132,6 @@ class AddExpenses extends Component {
                   onChange={this.changeHandler}
                   placeholder="Grand Total"
                 />
-
                 <input
                   className="input"
                   type="text"

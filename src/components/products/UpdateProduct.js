@@ -39,8 +39,8 @@ class UpdateProduct extends Component {
       foodType:[],
       selectData:[],
       selectedOptions: []
-    };
-  }
+    }
+  };
   // get category tax
    componentDidMount() {
     const id = this.props.match.params.id;
@@ -126,7 +126,7 @@ class UpdateProduct extends Component {
 
   handleImageChange = (event) => {
     this.setState({
-      productImage: '',
+      productImage:'',
     })
     this.setState({
       selectedFile: event.target.files[0],
@@ -150,8 +150,8 @@ class UpdateProduct extends Component {
   FormSubmit = (e) => {
     this.setState({select:''});
     this.state.select = this.state.selectedOptions.map(selected => {
-     console.log(selected.value)
-     return(selected.value)
+    console.log(selected.value)
+    return(selected.value)
    })
    this.state.foodType=this.state.foodType.value
    e.preventDefault();
@@ -160,8 +160,8 @@ class UpdateProduct extends Component {
    fd.append("tax_id", this.state.select.join(','));
    fd.append("menuName", this.state.menuName);
    console.log(this.state.productImage);
-    if(this.state.selectedFile != null){
-    fd.append("productImage", this.state.selectedFile);
+   if(this.state.selectedFile != null){
+  fd.append("productImage", this.state.selectedFile);
     }
     fd.append("description", this.state.description);
     fd.append("calories", this.state.calories);
@@ -276,8 +276,8 @@ justify-content-between align-items-lg-center
    <div className="row">
      <div className="col-md-6 ">
        <Select
-                    className="cat-input"
-                    classNamePrefix="react-select"
+            className="cat-input"
+            classNamePrefix="react-select"
             name="catId"
             placeholder="Select Category"
             value={this.state.selectedCat}
